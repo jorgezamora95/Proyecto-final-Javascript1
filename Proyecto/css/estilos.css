@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #555;
+}
+
+.cabecero {
+    height: 260px;
+    background: linear-gradient(135deg, rgba(221, 36, 71, 0.92), rgba(123, 67, 151, 0.92));
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+.limpiarEstilos::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.derecha {
+    float: right;
+}
+
+
+.presupuesto {
+    width: 360px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.presupuesto_titulo {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.presupuesto_valor {
+    font-size: 46px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 28px;
+    letter-spacing: 1px;
+}
+
+.presupuesto_ingreso {
+    padding: 14px 18px;
+    background-color: #28b9b5;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.presupuesto_ingreso--texto {
+    float: left;
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.presupuesto_ingreso--valor {
+    float: left;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.presupuesto_ingreso--porcentaje {
+    float: left;
+    width: 38px;
+    min-height: 18px;
+    margin-left: 10px;
+}
+
+
+.presupuesto_egreso {
+    padding: 14px 18px;
+    background-color: #ff5049;
+    text-transform: uppercase;
+}
+
+.presupuesto_egreso--texto {
+    float: left;
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.presupuesto_egreso--valor {
+    float: left;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.presupuesto_egreso--porcentaje {
+    float: left;
+    width: 38px;
+    margin-left: 10px;
+    padding: 3px 0;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.25);
+    font-size: 11px;
+    text-align: center;
+}
+
+.agregar {
+    padding: 18px;
+    border-bottom: 1px solid #e7e7e7;
+    background-color: #f7f7f7;
+}
+
+.agregar_contenedor {
+    width: 760px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.agregar_tipo {
+    width: 55px;
+    height: 44px;
+    margin-right: 8px;
+    border: 1px solid #e7e7e7;
+    background-color: #ffffff;
+    font-size: 18px;
+    color: #555;
+    border-radius: 4px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.agregar_descripcion {
+    width: 390px;
+    height: 44px;
+    margin-right: 8px;
+    padding: 0 15px;
+    border: 1px solid #e7e7e7;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.agregar_valor {
+    width: 120px;
+    height: 44px;
+    margin-right: 8px;
+    padding: 0 15px;
+    border: 1px solid #e7e7e7;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.agregar_btn {
+    vertical-align: middle;
+    border: none;
+    background: none;
+    color: #28b9b5;
+    font-size: 34px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.agregar_btn:hover {
+    transform: scale(1.1);
+}
+
+.agregar_tipo:focus,
+.agregar_descripcion:focus,
+.agregar_valor:focus {
+    border: 1px solid #28b9b5;
+}
+
+.contenedor {
+    width: 1000px;
+    margin: 60px auto;
+}
+
+.ingresos {
+    float: left;
+    width: 47%;
+    margin-right: 6%;
+}
+
+.egresos {
+    float: left;
+    width: 47%;
+}
+
+.ingreso_titulo {
+    margin-bottom: 20px;
+    color: #28b9b5;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.egreso_titulo {
+    margin-bottom: 20px;
+    color: #ff5049;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+/* =========================
+   ELEMENTOS DE LAS LISTAS
+========================= */
+
+.elemento {
+    padding: 14px;
+    border-top: 1px solid #e7e7e7;
+    transition: background-color 0.2s;
+}
+
+.elemento:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+.elemento:hover {
+    background-color: #fafafa;
+}
+
+.elemento_descripcion {
+    float: left;
+    font-size: 14px;
+}
+
+.elemento_valor {
+    float: left;
+    font-size: 14px;
+    transition: transform 0.3s;
+}
+
+.elemento_porcentaje {
+    float: left;
+    width: 35px;
+    margin-left: 12px;
+    padding: 3px;
+    border-radius: 3px;
+    background-color: #ffdada;
+    color: #ff5049;
+    font-size: 10px;
+    text-align: center;
+}
+
+.elemento_eliminar {   
+    float: left;
+    margin-left: 10px;
+}
+
+.elemento_eliminar_btn {
+    display: none;
+    border: none;
+    background: none;
+    color: #ff5049;
+    font-size: 20px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.elemento:hover .elemento_eliminar_btn {
+    display: block;
+}
+
+.elemento:hover .elemento_valor {
+    transform: translateX(-10px);
+}
+
+.ingresos .elemento_valor {
+    color: #28b9b5;
+}
+
+.egresos .elemento_valor {
+    color: #ff5049;
+}
+
